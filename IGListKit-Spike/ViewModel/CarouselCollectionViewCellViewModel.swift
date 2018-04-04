@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct CarouselCollectionViewCellViewModel {
     var item: CarouselItem
