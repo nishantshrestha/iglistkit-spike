@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5A4CB6E4C26CDAC3603CB306 /* Pods_IGListKit_Spike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D39C5E43F4B0B820114FCF3 /* Pods_IGListKit_Spike.framework */; };
+		8A5DF687207493DD00CB4F66 /* SectionController in Resources */ = {isa = PBXBuildFile; fileRef = 8A5DF681207493DC00CB4F66 /* SectionController */; };
+		8A5DF688207493DD00CB4F66 /* ViewModel in Resources */ = {isa = PBXBuildFile; fileRef = 8A5DF682207493DC00CB4F66 /* ViewModel */; };
+		8A5DF689207493DD00CB4F66 /* Views in Resources */ = {isa = PBXBuildFile; fileRef = 8A5DF683207493DC00CB4F66 /* Views */; };
+		8A5DF68A207493DD00CB4F66 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 8A5DF684207493DC00CB4F66 /* Model */; };
+		8A5DF68B207493DD00CB4F66 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DF685207493DD00CB4F66 /* Colors.swift */; };
+		8A5DF68C207493DD00CB4F66 /* HomeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DF686207493DD00CB4F66 /* HomeFeedViewController.swift */; };
 		8AF400BD2074930D003DA00D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF400BC2074930D003DA00D /* AppDelegate.swift */; };
 		8AF400BF2074930D003DA00D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF400BE2074930D003DA00D /* ViewController.swift */; };
 		8AF400C22074930D003DA00D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF400C02074930D003DA00D /* Main.storyboard */; };
@@ -17,6 +23,12 @@
 
 /* Begin PBXFileReference section */
 		13B3D6EE3D6F6B98797DC81E /* Pods-IGListKit-Spike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKit-Spike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKit-Spike/Pods-IGListKit-Spike.debug.xcconfig"; sourceTree = "<group>"; };
+		8A5DF681207493DC00CB4F66 /* SectionController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SectionController; sourceTree = "<group>"; };
+		8A5DF682207493DC00CB4F66 /* ViewModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewModel; sourceTree = "<group>"; };
+		8A5DF683207493DC00CB4F66 /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
+		8A5DF684207493DC00CB4F66 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		8A5DF685207493DD00CB4F66 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8A5DF686207493DD00CB4F66 /* HomeFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeFeedViewController.swift; sourceTree = "<group>"; };
 		8AF400B92074930D003DA00D /* IGListKit-Spike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IGListKit-Spike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF400BC2074930D003DA00D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF400BE2074930D003DA00D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +90,12 @@
 		8AF400BB2074930D003DA00D /* IGListKit-Spike */ = {
 			isa = PBXGroup;
 			children = (
+				8A5DF685207493DD00CB4F66 /* Colors.swift */,
+				8A5DF686207493DD00CB4F66 /* HomeFeedViewController.swift */,
+				8A5DF684207493DC00CB4F66 /* Model */,
+				8A5DF681207493DC00CB4F66 /* SectionController */,
+				8A5DF682207493DC00CB4F66 /* ViewModel */,
+				8A5DF683207493DC00CB4F66 /* Views */,
 				8AF400BC2074930D003DA00D /* AppDelegate.swift */,
 				8AF400BE2074930D003DA00D /* ViewController.swift */,
 				8AF400C02074930D003DA00D /* Main.storyboard */,
@@ -150,8 +168,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A5DF688207493DD00CB4F66 /* ViewModel in Resources */,
 				8AF400C72074930D003DA00D /* LaunchScreen.storyboard in Resources */,
 				8AF400C42074930D003DA00D /* Assets.xcassets in Resources */,
+				8A5DF689207493DD00CB4F66 /* Views in Resources */,
+				8A5DF68A207493DD00CB4F66 /* Model in Resources */,
+				8A5DF687207493DD00CB4F66 /* SectionController in Resources */,
 				8AF400C22074930D003DA00D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AF400BF2074930D003DA00D /* ViewController.swift in Sources */,
+				8A5DF68B207493DD00CB4F66 /* Colors.swift in Sources */,
 				8AF400BD2074930D003DA00D /* AppDelegate.swift in Sources */,
+				8A5DF68C207493DD00CB4F66 /* HomeFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

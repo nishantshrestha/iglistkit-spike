@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CarouselVideoCollectionViewCell" customModule="IGListKitExamples" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="256"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="256"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0b3-03-j0l">
+                        <rect key="frame" x="10" y="10" width="365" height="200"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSK-tp-Ch7">
+                                <rect key="frame" x="152" y="70" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8fv-TK-5ZU"/>
+                                    <constraint firstAttribute="height" constant="60" id="zBD-aK-6z3"/>
+                                </constraints>
+                                <state key="normal" image="play-button"/>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="lkz-9t-HDb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="cSK-tp-Ch7" firstAttribute="centerX" secondItem="0b3-03-j0l" secondAttribute="centerX" id="89m-38-6bM"/>
+                            <constraint firstAttribute="height" constant="200" id="NNr-fE-7I5"/>
+                            <constraint firstItem="cSK-tp-Ch7" firstAttribute="centerY" secondItem="0b3-03-j0l" secondAttribute="centerY" id="nfn-ab-oLx"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GW-Dk-aF1">
+                        <rect key="frame" x="20" y="226" width="345" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqd-xi-CIF">
+                        <rect key="frame" x="0.0" y="255" width="385" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="M4f-9Q-a9a"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3GW-Dk-aF1" firstAttribute="top" secondItem="0b3-03-j0l" secondAttribute="bottom" constant="16" id="5mg-58-3Vd"/>
+                <constraint firstAttribute="bottom" secondItem="pqd-xi-CIF" secondAttribute="bottom" id="AvZ-9b-zNi"/>
+                <constraint firstItem="0b3-03-j0l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="CnV-sf-gvJ"/>
+                <constraint firstItem="3GW-Dk-aF1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="FDF-bn-xKn"/>
+                <constraint firstAttribute="trailing" secondItem="pqd-xi-CIF" secondAttribute="trailing" id="bQ7-zF-HNu"/>
+                <constraint firstItem="0b3-03-j0l" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="lWB-QQ-sEl"/>
+                <constraint firstItem="pqd-xi-CIF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="t6j-ap-7PB"/>
+                <constraint firstAttribute="trailing" secondItem="3GW-Dk-aF1" secondAttribute="trailing" constant="20" id="tXE-gr-Cbw"/>
+                <constraint firstAttribute="trailing" secondItem="0b3-03-j0l" secondAttribute="trailing" constant="10" id="vo8-PD-TT4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="385" height="256"/>
+            <connections>
+                <outlet property="playButton" destination="cSK-tp-Ch7" id="8tb-ZO-OtB"/>
+                <outlet property="videoContainerView" destination="0b3-03-j0l" id="Mjh-oj-Fgc"/>
+                <outlet property="videoTitleLabel" destination="3GW-Dk-aF1" id="lHW-dk-u20"/>
+            </connections>
+            <point key="canvasLocation" x="-56.5" y="138"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play-button" width="512" height="512"/>
+    </resources>
+</document>

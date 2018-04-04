@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CardCollectionViewCell" customModule="IGListKitExamples" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="245"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="245"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kc7-45-sXX">
+                        <rect key="frame" x="10" y="10" width="382" height="225"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jX7-Mm-Mjh">
+                                <rect key="frame" x="20" y="167" width="342" height="38"/>
+                                <color key="backgroundColor" red="0.79607843140000001" green="0.08235294118" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                <state key="normal" title="&lt;ACTION TITLE&gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ori-H2-lI1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIE-ey-EvP">
+                                <rect key="frame" x="20" y="79" width="342" height="67"/>
+                                <string key="text">Lorem ipsum dolor amet pinterest banh mi adaptogen chicharrones next level iPhone brunch green juice snackwave gochujang. Tilde small batch retro meggings occupy austin af vice affogato. </string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymD-D0-FNL">
+                                <rect key="frame" x="20" y="48" width="342" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XIE-ey-EvP" secondAttribute="trailing" constant="20" id="4go-yh-FTc"/>
+                            <constraint firstItem="ymD-D0-FNL" firstAttribute="leading" secondItem="Kc7-45-sXX" secondAttribute="leading" constant="20" id="GVM-yT-Drz"/>
+                            <constraint firstItem="XIE-ey-EvP" firstAttribute="leading" secondItem="Kc7-45-sXX" secondAttribute="leading" constant="20" id="HFn-mo-LcG"/>
+                            <constraint firstAttribute="trailing" secondItem="ymD-D0-FNL" secondAttribute="trailing" constant="20" id="Luu-pK-CJq"/>
+                            <constraint firstAttribute="bottom" secondItem="jX7-Mm-Mjh" secondAttribute="bottom" constant="20" id="SJy-lM-HWm"/>
+                            <constraint firstAttribute="trailing" secondItem="jX7-Mm-Mjh" secondAttribute="trailing" constant="20" id="YYf-e7-u1g"/>
+                            <constraint firstItem="jX7-Mm-Mjh" firstAttribute="leading" secondItem="Kc7-45-sXX" secondAttribute="leading" constant="20" id="fJF-qk-3hc"/>
+                            <constraint firstItem="XIE-ey-EvP" firstAttribute="centerY" secondItem="Kc7-45-sXX" secondAttribute="centerY" id="iCd-5U-esk"/>
+                            <constraint firstItem="XIE-ey-EvP" firstAttribute="top" secondItem="ymD-D0-FNL" secondAttribute="bottom" constant="10" id="mjI-MH-To8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.90147569449999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Kc7-45-sXX" secondAttribute="trailing" constant="10" id="1Az-at-UvP"/>
+                <constraint firstItem="Kc7-45-sXX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="NWL-k4-fVR"/>
+                <constraint firstItem="Kc7-45-sXX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Pzy-fY-HkP"/>
+                <constraint firstAttribute="bottom" secondItem="Kc7-45-sXX" secondAttribute="bottom" constant="10" id="zpB-XT-dEC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="402" height="245"/>
+            <connections>
+                <outlet property="actionButton" destination="jX7-Mm-Mjh" id="oNb-ih-Uj4"/>
+            </connections>
+            <point key="canvasLocation" x="-102" y="138.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
