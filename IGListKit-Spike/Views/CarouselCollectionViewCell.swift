@@ -17,6 +17,12 @@ class CarouselCollectionViewCell: UICollectionViewCell {
     
     var viewModel: CarouselCollectionViewCellViewModel?
     
+    let activityIndicatorView: UIActivityIndicatorView = {
+        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        return activityIndicator
+    }()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,6 +32,15 @@ class CarouselCollectionViewCell: UICollectionViewCell {
         
         carouselCollectionView.dataSource = self
         carouselCollectionView.delegate = self
+        
+        setupActivityIndicatorView()
+    }
+    
+    private func setupActivityIndicatorView() {
+        addSubview(activityIndicatorView)
+        
+        activityIndicatorView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        activityIndicatorView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
     }
     
     func configure(withViewModel viewModel: CarouselCollectionViewCellViewModel) {
@@ -33,6 +48,12 @@ class CarouselCollectionViewCell: UICollectionViewCell {
         
         titleLabel.text = viewModel.title
         actionLabel.text = viewModel.action
+        
+        if viewModel.colours.isEmpty {
+           activityIndicatorView.startAnimating()
+        } else {
+           activityIndicatorView.stopAnimating()
+        }
         
         carouselCollectionView.reloadData()
     }

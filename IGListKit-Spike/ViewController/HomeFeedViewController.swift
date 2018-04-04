@@ -41,6 +41,7 @@ extension HomeFeedViewController: ListAdapterDataSource {
             "Please Enable Location Service" as ListDiffable,
             "Find Your Favourite Club" as ListDiffable,
             "Find Your Favourite Class" as ListDiffable,
+            CarouselItem(id: "unique-id-193", title: "Upcoming near you", description: "", items: []),
             CarouselItem(id: "unique-id-123", title: "Upcoming near you", description: "", items: MyColors.firstSet),
             VideoItem(id: "Goodlife Robina", url: "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"),
             CarouselItem(id: "unique-id-234", title: "Improve your core strength", description: "", items: MyColors.secondSet),

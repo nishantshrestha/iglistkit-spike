@@ -23,6 +23,8 @@ class CarouselSectionController: ListSectionController {
                 fatalError()
         }
         
+        object.delegate = self
+        
         let viewModel = CarouselCollectionViewCellViewModel(item: object)
         cell.configure(withViewModel: viewModel)
         
@@ -40,5 +42,13 @@ class CarouselSectionController: ListSectionController {
     
     override func didSelectItem(at index: Int) {
         print("selected item at index: ", index)
+    }
+}
+
+extension CarouselSectionController: CarouselItemDelegate {
+    func didUpdate() {
+        collectionContext?.performBatch(animated: true, updates: { (batchContext) in
+            batchContext.reload(self)
+        })
     }
 }
