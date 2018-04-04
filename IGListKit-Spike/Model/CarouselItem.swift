@@ -32,6 +32,7 @@ class CarouselItem {
     }
     
     private func fetchData() {
+        // NOTE: This will be 'already fetched' test or something along those lines.
         if items.count == 0 {
             doAfter(5.0, completion: { [weak self] in
                 self?.items = MyColors.thirdSet
